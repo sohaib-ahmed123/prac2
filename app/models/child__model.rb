@@ -1,0 +1,2 @@
+class ChildModel < ApplicationRecord
+end

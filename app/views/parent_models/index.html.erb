@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Parent Models</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @parent_models.each do |parent_model| %>
+      <tr>
+        <td><%= link_to 'Show', parent_model %></td>
+        <td><%= link_to 'Edit', edit_parent_model_path(parent_model) %></td>
+        <td><%= link_to 'Destroy', parent_model, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Parent Model', new_parent_model_path %>

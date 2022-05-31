@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Child  Models</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @child__models.each do |child__model| %>
+      <tr>
+        <td><%= link_to 'Show', child__model %></td>
+        <td><%= link_to 'Edit', edit_child__model_path(child__model) %></td>
+        <td><%= link_to 'Destroy', child__model, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Child  Model', new_child__model_path %>

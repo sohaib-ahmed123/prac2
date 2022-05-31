@@ -1,0 +1,18 @@
+<!doctype html>
+<head>
+<title>
+Custom
+</title>
+<meta charset ='utf-8'>
+</head>
+<body>
+<%= paginate @book_partials %>
+<%for book in @book_partials%>
+<%=book.name%>
+<%end%>
+<%= form_for @book , url: {action:"index"} do |f| %>
+<%= f.text_field :name %>
+<% end %>
+ <!-- <%= render partial: 'book_partial', collection: @book_partials%>-->
+</body>
+</html>

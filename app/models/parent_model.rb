@@ -1,0 +1,2 @@
+class ParentModel < ApplicationRecord
+end

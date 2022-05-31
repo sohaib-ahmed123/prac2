@@ -1,0 +1,2 @@
+module ParentModelsHelper
+end
